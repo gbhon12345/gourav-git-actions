@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: print Greetings
-       run: echo "Welcome to my first action workflow"
+       run: |
+             echo "list all files"
+             ls -lrt
+             echo "Welcome to my first action workflow"
      - name: print goodbye
        run: echo "Done ..Bye"
